@@ -76,21 +76,6 @@ for kl in range(70):
     core[kl,1] = float(line.split()[4])
     core[kl,2] = float(line.split()[5])
 
-vect = np.array([[0,0,0],
-                [a,0, 0],
-                [0,b, 0],
-                [0,0, c],
-                [a,b, c],
-                [a,b,0],
-                [a,0,c],
-                [0,b,c],
-                [a/2, b/2, 0],
-                [a/2,b/2,c],
-                [0, b/2, c/2], #10
-                [a/2, 0, c/2], #11
-                [a, b/2, c/2], #12
-                [a/2,b,c/2]]) #13
-
 bvect = np.array([[0,0,0],
                 [a/2, b/2, 0],
                 [0, b/2, c/2],
@@ -101,8 +86,6 @@ bvect = np.array([[0,0,0],
 
 nmol = NN[0] * NN[1] * NN[2] * 4
 newgro = open(groname,'w')
-
-# Gotta be careful if any of the coords go above 9.9999 !!!!
 
 newgro.write('crystal \n'+  str(int(70*nmol)) + '\n')
 
