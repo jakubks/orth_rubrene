@@ -1,5 +1,5 @@
 # orth_rubrene
-Code for generating in orthorhombic rubrene crystal geometries in GROMACS format
+Code for generating orthorhombic rubrene crystal geometries in a GROMACS (.gro) format. The corresponding topology files can be found in the SI of
 
 Orthorhombic crystal geometry is based on the data from Jurchescu, O. D., Meetsma, A., & Palstra, T. T. (2006). Low-temperature structure of rubrene single crystals grown by vapor transport. Acta Crystallographica Section B: Structural Science, 62(2), 330-334. 
 
